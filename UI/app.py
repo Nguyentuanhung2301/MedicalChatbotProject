@@ -1,3 +1,12 @@
+import sys
+import os
+
+# Thêm thư mục gốc dự án vào PYTHONPATH
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if ROOT_DIR not in sys.path:
+    sys.path.append(ROOT_DIR)
+
+
 import streamlit as st
 
 from Source.medical_chatbot_openrouter import ask_openrouter
