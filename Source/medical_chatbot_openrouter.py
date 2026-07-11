@@ -31,7 +31,7 @@ def ask_openrouter(question: str) -> str:
     Gửi câu hỏi tới OpenRouter và trả về câu trả lời
     """
     payload = {
-        "model": "mistralai/mistral-7b-instruct",
+        "model": "google/gemma-3-4b-it:free",
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": question}
